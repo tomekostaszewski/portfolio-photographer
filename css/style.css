@@ -1,0 +1,683 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.review-background {
+  width: 100%;
+  background-color: #262626;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6.5rem .75rem;
+}
+
+.fixNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  padding: .5em 3em;
+  -webkit-box-shadow: 1px 2px 5px #000;
+          box-shadow: 1px 2px 5px #000;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 3em;
+  background-color: #000;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+nav .logo {
+  z-index: 20;
+}
+
+nav .logo i {
+  display: inline-block;
+  font-size: 4rem;
+  color: #fff;
+}
+
+nav .logo i span {
+  display: inline-block;
+  color: red;
+  -webkit-animation: dott 1.5s infinite;
+          animation: dott 1.5s infinite;
+}
+
+nav .bars-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  z-index: 20;
+}
+
+nav .bars-btn .bars {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+nav .bars-btn .one {
+  top: 15%;
+  width: 100%;
+}
+
+nav .bars-btn .two {
+  top: 50%;
+  width: 75%;
+}
+
+nav .bars-btn .three {
+  top: 85%;
+  width: 50%;
+}
+
+nav .bars-btn:hover .bars {
+  width: 100%;
+}
+
+nav .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+nav .nav-container ul {
+  list-style-type: none;
+}
+
+nav .nav-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+
+nav .nav-container ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+nav .active {
+  left: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../img/photographer_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 96%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0, 100% 96%, 0% 100%);
+}
+
+header h1, header h2 {
+  color: #fff;
+  line-height: 170%;
+}
+
+header h1 {
+  font-size: 5rem;
+}
+
+header h2 {
+  font-size: 4rem;
+}
+
+header .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 1.5rem;
+  z-index: 8;
+}
+
+header .social-media i {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 2rem;
+  border-radius: 10px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+header .social-media i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .hero-header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .nav-down {
+  position: absolute;
+  bottom: 50px;
+  font-size: 5rem;
+}
+
+header .nav-down a {
+  color: #fff;
+}
+
+.aboutus {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutus .aboutus-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutus .aboutus-box .aboutus-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.aboutus .aboutus-box .aboutus-img img {
+  max-width: 100%;
+  display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.aboutus .aboutus-box .aboutus-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.aboutus .aboutus-box .aboutus-text h3 {
+  font-size: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.aboutus .aboutus-box .aboutus-text h3 span {
+  color: red;
+}
+
+.aboutus .aboutus-box .aboutus-text p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+}
+
+.offer {
+  background-color: #f5f5f5;
+}
+
+.offer .offer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5rem 0 0;
+}
+
+.offer .offer-box .offer-text {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  padding: 0 3rem 3rem;
+}
+
+.offer .offer-box .offer-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+.offer .offer-box .offer-cards .offer-card {
+  width: 80vw;
+  height: 370px;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: 2px 4px 5px #262626;
+          box-shadow: 2px 4px 5px #262626;
+}
+
+.offer .offer-box .offer-cards .offer-option-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer .offer-box .offer-cards .offer-wedding {
+  background-image: url("../img/wedding.jpg");
+}
+
+.offer .offer-box .offer-cards .offer-car {
+  background-image: url("../img/cars.jpg");
+}
+
+.offer .offer-box .offer-cards .offer-road {
+  background-image: url("../img/road.jpg");
+}
+
+.offer .offer-box .offer-cards .offer-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.offer .offer-box .offer-cards .offer-hero .offer-text-img {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 140%;
+}
+
+.portfolio-text {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
+
+.portfolio-text span {
+  color: red;
+}
+
+.portfolio-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5rem 0 0;
+}
+
+.portfolio-box .portfolio-img {
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.portfolio-box .portfolio-img img {
+  width: 300px;
+  height: 450px;
+}
+
+.review .review-text {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.review .review-text span {
+  color: red;
+}
+
+.review .review-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .review-box .review-card {
+  width: 80%;
+  margin: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.review .review-box .review-card .review-stars i {
+  color: gold;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.review .review-box .review-card p {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+.review .review-box .review-card p i {
+  padding: 1rem;
+}
+
+.review .review-box .review-card .review-author {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-top: 2rem;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/contact_640.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .contact-comment {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.contact .contact-comment span {
+  color: red;
+}
+
+.contact .contact-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100000;
+}
+
+.contact .contact-box .contact-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.contact .contact-box .contact-text .contact-name {
+  line-height: 300%;
+  font-size: 2rem;
+}
+
+.contact .contact-box .contact-text address {
+  text-align: center;
+  line-height: 170%;
+  font-size: 1.6rem;
+}
+
+.contact .contact-box .contact-text address a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact .contact-box .contact-text iframe {
+  margin: 5rem 0;
+}
+
+.contact .contact-box .contact-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+}
+
+.contact .contact-box .contact-form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-box .contact-form form input, .contact .contact-box .contact-form form textarea {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-bottom: 1px solid #262626;
+  color: #fff;
+}
+
+.contact .contact-box .contact-form form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact .contact-box .contact-form form :-ms-input-placeholder {
+  color: #fff;
+}
+
+.contact .contact-box .contact-form form ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.contact .contact-box .contact-form form ::placeholder {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  height: 250px;
+}
+
+@-webkit-keyframes dott {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dott {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

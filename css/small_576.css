@@ -1,0 +1,61 @@
+.offer .offer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer .offer-box .offer-text {
+  font-size: 1.8rem;
+}
+
+.offer .offer-box .offer-cards {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer .offer-box .offer-cards .offer-card {
+  max-width: 250px;
+  margin: 4rem 2rem;
+}
+
+.portfolio-box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.review .review-box {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.review .review-box .review-stars {
+  margin-bottom: 2rem;
+}
+
+.review .review-box .review-card {
+  width: 50%;
+  height: 250px;
+  padding: 3rem;
+}
+/*# sourceMappingURL=small_576.css.map */

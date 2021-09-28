@@ -1,0 +1,32 @@
+header {
+  background-image: url("../img/photographer_1280.jpg");
+}
+
+.offer-card:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+.contact {
+  background-image: url("../img/contact_1280.jpg");
+}
+
+.contact .contact-box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact .contact-box .contact-text {
+  width: 50%;
+}
+
+.contact .contact-box .contact-form {
+  width: 50%;
+}
+/*# sourceMappingURL=medium_768.css.map */

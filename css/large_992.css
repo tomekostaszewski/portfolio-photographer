@@ -1,0 +1,31 @@
+header {
+  background-image: url("../img/photographer_1920.jpg");
+}
+
+.aboutus .aboutus-box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutus .aboutus-box .aboutus-img {
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+}
+
+.aboutus .aboutus-box .aboutus-text {
+  width: 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.contact {
+  background-image: url("../img/contact_1920.jpg");
+}
+/*# sourceMappingURL=large_992.css.map */
