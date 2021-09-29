@@ -12,9 +12,7 @@ const openNav = () => {
         })
     })
 }
-
 navBtn.addEventListener('click', openNav);
-
 
 
 const fixedNav = () => {
@@ -24,6 +22,5 @@ const fixedNav = () => {
         navTop.classList.remove('fixNav')
     }
 }
-
 window.addEventListener('scroll', fixedNav);
 

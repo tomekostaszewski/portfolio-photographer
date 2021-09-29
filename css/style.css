@@ -529,6 +529,17 @@ header .nav-down a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
+}
+
+.contact .hero-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 .contact .contact-comment {
@@ -557,7 +568,6 @@ header .nav-down a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 100000;
 }
 
 .contact .contact-box .contact-text {
@@ -575,7 +585,7 @@ header .nav-down a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 1rem;
+  padding: 0 0 8rem;
   color: #fff;
 }
 
@@ -592,7 +602,7 @@ header .nav-down a {
 
 .contact .contact-box .contact-text address a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .contact .contact-box .contact-text iframe {
@@ -614,7 +624,6 @@ header .nav-down a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 1rem;
 }
 
 .contact .contact-box .contact-form form {
@@ -637,8 +646,9 @@ header .nav-down a {
   border: none;
   margin: 1rem 0;
   padding: 1rem;
-  border-bottom: 1px solid #262626;
+  border-bottom: 2px solid #fff;
   color: #fff;
+  resize: none;
 }
 
 .contact .contact-box .contact-form form ::-webkit-input-placeholder {

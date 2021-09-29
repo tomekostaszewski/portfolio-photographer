@@ -347,6 +347,16 @@ header
     background-attachment: fixed
     background-repeat: no-repeat
     background-size: cover
+    z-index: 1
+
+    .hero-contact
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+        z-index: -1
 
     .contact-comment
         text-align: center
@@ -363,7 +373,6 @@ header
         flex-direction: column
         justify-content: center
         align-items: center
-        z-index: 100000
 
         .contact-text
             width: 100%
@@ -371,7 +380,7 @@ header
             flex-direction: column
             justify-content: center
             align-items: center
-            margin: 0 1rem
+            padding: 0 0 8rem
             color: #fff
 
             .contact-name
@@ -385,7 +394,7 @@ header
 
                 a
                     text-decoration: none
-                    color: #000
+                    color: #fff
 
             iframe
                 margin: 5rem 0
@@ -396,7 +405,7 @@ header
             flex-direction: column
             justify-content: center
             align-items: center
-            margin: 0 1rem
+            
 
             form
                 width: 100%
@@ -410,8 +419,9 @@ header
                     border: none
                     margin: 1rem 0
                     padding: 1rem
-                    border-bottom: 1px solid #262626
+                    border-bottom: 2px solid #fff
                     color: #fff
+                    resize: none
 
                 ::placeholder
                     color: #fff
