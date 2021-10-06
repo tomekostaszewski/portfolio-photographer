@@ -640,7 +640,7 @@ header .nav-down a {
           align-items: center;
 }
 
-.contact .contact-box .contact-form form input, .contact .contact-box .contact-form form textarea {
+.contact .contact-box .contact-form form input[type=text], .contact .contact-box .contact-form form input[type=tel], .contact .contact-box .contact-form form textarea {
   width: 80%;
   background-color: transparent;
   border: none;
@@ -649,6 +649,7 @@ header .nav-down a {
   border-bottom: 2px solid #fff;
   color: #fff;
   resize: none;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .contact .contact-box .contact-form form ::-webkit-input-placeholder {
@@ -667,10 +668,28 @@ header .nav-down a {
   color: #fff;
 }
 
+.contact .contact-box .contact-form form input:focus, .contact .contact-box .contact-form form textarea:focus {
+  outline: transparent;
+}
+
+.contact .contact-box .contact-form form input[type=submit] {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
 footer {
   width: 100%;
   background-color: #000;
-  height: 250px;
+}
+
+footer p {
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
 }
 
 @-webkit-keyframes dott {

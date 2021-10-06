@@ -413,7 +413,7 @@ header
                 flex-direction: column
                 align-items: center
 
-                input, textarea
+                input[type=text], input[type=tel], textarea
                     width: 80%
                     background-color: transparent
                     border: none
@@ -422,16 +422,31 @@ header
                     border-bottom: 2px solid #fff
                     color: #fff
                     resize: none
+                    font-family: 'Quicksand', sans-serif
 
                 ::placeholder
                     color: #fff
 
-                input:active
+                input:focus,textarea:focus
+                    outline: transparent
+
+                input[type=submit]
+                    background-color: transparent
+                    color: #fff
+                    padding: 1rem 2rem
+                    border-radius: 10px
+                    border: 1px solid #fff
+                    
 
 footer
     width: 100%
     background-color: #000
-    height: 250px
+
+    p
+        font-size: 1.4rem
+        padding: 1rem
+        color: #fff
+        text-align: center
 
 // animation -------------------------------------
 @keyframes dott
